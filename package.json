@@ -1,0 +1,17 @@
+{
+  "name": "dsh-plugin-pin",
+  "version": "0.1.1",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/rapidrabbitsliu/dsh-plugin-pin.git" },
+  "homepage": "https://github.com/rapidrabbitsliu/dsh-plugin-pin#readme",
+  "bugs": { "url": "https://github.com/rapidrabbitsliu/dsh-plugin-pin/issues" },
+  "keywords": ["dsh", "deepseek-harness", "plugin", "workspace", "pin"],
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "type": "module",
+  "description": "Persistent workspace pinning through the workspace menu and native ordering",
+  "exports": { ".": "./index.js", "./client": "./client.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["index.js", "core.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test", "check": "node --check index.js && node --check core.js && node --check client.js" },
+  "dependencies": { "zod": "^4.1.0" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" }, "client": { "platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-workspace"] } }
+}

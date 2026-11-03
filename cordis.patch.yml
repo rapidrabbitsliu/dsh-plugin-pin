@@ -1,0 +1,4 @@
+- insert:
+    - id: workspace-pin
+      name: dsh-plugin-pin
+      config: {}

@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+permission-recovery/
+.playwright-mcp/
+.env*
+.npmrc

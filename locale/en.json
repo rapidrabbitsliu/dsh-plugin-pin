@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Workspace Pins",
+    "description": "Pin workspaces from their menus, newest pin first, with persistent profile-wide ordering. Built-in session pins remain unchanged."
+  }
+}
